@@ -2,7 +2,8 @@
  * Hungarian translation
  * @author Gáspár Lajos <info@glsys.eu>
  * @author karrak1
- * @version 2020-11-27
+ * @author Simon Roland simrol91@gmail.com
+ * @version 2022-05-31
  */
 (function(root, factory) {
 	if (typeof define === 'function' && define.amd) {
@@ -14,12 +15,12 @@
 	}
 }(this, function(elFinder) {
 	elFinder.prototype.i18.hu = {
-		translator : 'Gáspár Lajos &lt;info@glsys.eu&gt;, karrak1',
+		translator : 'Gáspár Lajos &lt;info@glsys.eu&gt;, karrak1, Simon Roland simrol91@gmail.com',
 		language   : 'Hungarian',
 		direction  : 'ltr',
-		dateFormat : 'Y.F.d H:i:s', // will show like: 2020.November.27 20:52:18
-		fancyDateFormat : '$1 H:i', // will show like: Ma 20:52
-		nonameDateFormat : 'ymd-His', // noname upload will show like: 201127-205218
+		dateFormat : 'Y.F.d H:i:s', // will show like: 2022.Május.31 17:54:42
+		fancyDateFormat : '$1 H:i', // will show like: Ma 17:54
+		nonameDateFormat : 'ymd-His', // noname upload will show like: 220531-175442
 		messages   : {
 
 			/********************************** errors **********************************/
@@ -51,7 +52,7 @@
 			'errLocked'            : '"$1" zárolás alatt van, és nem lehet átnevezni, mozgatni vagy eltávolítani.',
 			'errExists'            : '"$1" nevű fájl már létezik.',
 			'errInvName'           : 'Érvénytelen fáljnév.',
-			'errInvDirname'        : 'Invalid folder name.',  // from v2.1.24 added 12.4.2017
+			'errInvDirname'        : 'Érévnytelen mappa név.',  // from v2.1.24 added 12.4.2017
 			'errFolderNotFound'    : 'Mappa nem található.',
 			'errFileNotFound'      : 'Fájl nem található.',
 			'errTrgFolderNotFound' : 'Cél mappa nem található. ("$1")',
@@ -77,7 +78,7 @@
 			'errMove'              : '"$1" áthelyezése nem sikerült.',
 			'errCopyInItself'      : '"$1" nem másolható saját magára.',
 			'errRm'                : '"$1" törlése nem sikerült.',
-			'errTrash'             : 'Unable into trash.', // from v2.1.24 added 30.4.2017
+			'errTrash'             : 'Nem elérhető lomtár.', // from v2.1.24 added 30.4.2017
 			'errRmSrc'             : 'Forrásfájl(ok) eltávolítása sikertelen.',
 			'errExtract'           : 'Nem sikerült kikibontani a "$1" fájlokat.',
 			'errArchive'           : 'Nem sikerült létrehozni az archívumot.',
@@ -116,6 +117,7 @@
 			'errServerError'       : 'Error occurred on the server side.', // from v2.1.25 added 16.6.2017
 			'errEmpty'             : 'Unable to empty folder "$1".', // from v2.1.25 added 22.6.2017
 			'moreErrors'           : 'There are $1 more errors.', // from v2.1.44 added 9.12.2018
+			'errMaxMkdirs'         : 'You can create up to $1 folders at one time.', // from v2.1.58 added 20.6.2021
 
 			/******************************* commands names ********************************/
 			'cmdarchive'   : 'Archívum létrehozása',
@@ -154,13 +156,13 @@
 			'cmdchmod'     : 'Módváltás', // from v2.1 added 20.6.2015
 			'cmdopendir'   : 'Mappa megnyitása', // from v2.1 added 13.1.2016
 			'cmdcolwidth'  : 'Állítsa vissza az oszlop szélességét', // from v2.1.13 added 12.06.2016
-			'cmdfullscreen': 'Full Screen', // from v2.1.15 added 03.08.2016
+			'cmdfullscreen': 'Teljesképernyő', // from v2.1.15 added 03.08.2016
 			'cmdmove'      : 'Move', // from v2.1.15 added 21.08.2016
 			'cmdempty'     : 'Empty the folder', // from v2.1.25 added 22.06.2017
-			'cmdundo'      : 'Undo', // from v2.1.27 added 31.07.2017
-			'cmdredo'      : 'Redo', // from v2.1.27 added 31.07.2017
+			'cmdundo'      : 'Visszavonás', // from v2.1.27 added 31.07.2017
+			'cmdredo'      : 'Előrevonás', // from v2.1.27 added 31.07.2017
 			'cmdpreference': 'Preferences', // from v2.1.27 added 03.08.2017
-			'cmdselectall' : 'Select all', // from v2.1.28 added 15.08.2017
+			'cmdselectall' : 'Összes kiválasztása', // from v2.1.28 added 15.08.2017
 			'cmdselectnone': 'Select none', // from v2.1.28 added 15.08.2017
 			'cmdselectinvert': 'Invert selection', // from v2.1.28 added 15.08.2017
 			'cmdopennew'   : 'Open in new window', // from v2.1.38 added 3.4.2018
@@ -185,11 +187,11 @@
 			'btnFileName':'Fájl név',  // from v2.1 added 22.5.2015
 			'btnSaveClose': 'Mentés és Kilépés', // from v2.1 added 12.6.2015
 			'btnBackup' : 'Biztonsági mentés', // fromv2.1 added 28.11.2015
-			'btnRename'    : 'Rename',      // from v2.1.24 added 6.4.2017
-			'btnRenameAll' : 'Rename(All)', // from v2.1.24 added 6.4.2017
-			'btnPrevious' : 'Prev ($1/$2)', // from v2.1.24 added 11.5.2017
-			'btnNext'     : 'Next ($1/$2)', // from v2.1.24 added 11.5.2017
-			'btnSaveAs'   : 'Save As', // from v2.1.25 added 24.5.2017
+			'btnRename'    : 'Átnevezés',      // from v2.1.24 added 6.4.2017
+			'btnRenameAll' : 'Összes átnevezése', // from v2.1.24 added 6.4.2017
+			'btnPrevious' : 'Előző($1/$2)', // from v2.1.24 added 11.5.2017
+			'btnNext'     : 'Következő($1/$2)', // from v2.1.24 added 11.5.2017
+			'btnSaveAs'   : 'Mentés másként', // from v2.1.25 added 24.5.2017
 
 			/******************************** notifications ********************************/
 			'ntfopen'     : 'Mappa megnyitás',
@@ -226,10 +228,10 @@
 			'ntfchkdir'   : 'Checking destination folder', // from v2.1.24 added 3.5.2017
 			'ntfundo'     : 'Undoing previous operation', // from v2.1.27 added 31.07.2017
 			'ntfredo'     : 'Redoing previous undone', // from v2.1.27 added 31.07.2017
-			'ntfchkcontent' : 'Checking contents', // from v2.1.41 added 3.8.2018
+			'ntfchkcontent' : 'Tartalom ellenőrzése', // from v2.1.41 added 3.8.2018
 
 			/*********************************** volumes *********************************/
-			'volume_Trash' : 'Trash', //from v2.1.24 added 29.4.2017
+			'volume_Trash' : 'Lomtár', //from v2.1.24 added 29.4.2017
 
 			/************************************ dates **********************************/
 			'dateUnknown' : 'Ismeretlen',
@@ -321,10 +323,10 @@
 			'selectlfile'     : 'Utolsó fájl kijelölése',
 			'viewlist'        : 'Lista nézet',
 			'viewicons'       : 'Ikon nézet',
-			'viewSmall'       : 'Small icons', // from v2.1.39 added 22.5.2018
-			'viewMedium'      : 'Medium icons', // from v2.1.39 added 22.5.2018
-			'viewLarge'       : 'Large icons', // from v2.1.39 added 22.5.2018
-			'viewExtraLarge'  : 'Extra large icons', // from v2.1.39 added 22.5.2018
+			'viewSmall'       : 'Kis ikonok', // from v2.1.39 added 22.5.2018
+			'viewMedium'      : 'Közepes ikonok', // from v2.1.39 added 22.5.2018
+			'viewLarge'       : 'Hatalmas ikonok', // from v2.1.39 added 22.5.2018
+			'viewExtraLarge'  : 'Extra hatalmas ikonok', // from v2.1.39 added 22.5.2018
 			'places'          : 'Helyek',
 			'calc'            : 'Kiszámítja',
 			'path'            : 'Útvonal',
@@ -342,7 +344,7 @@
 			'about'           : 'Névjegy',
 			'shortcuts'       : 'Gyorsbillenytyűk',
 			'help'            : 'Súgó',
-			'webfm'           : 'Web file manager',
+			'webfm'           : 'Internetes fájlkezelő',
 			'ver'             : 'Verzió',
 			'protocolver'     : 'protokol verzió',
 			'homepage'        : 'Projekt honlap',
@@ -358,13 +360,13 @@
 			'translator'      : 'fordító',
 			'icons'           : 'Ikonok',
 			'dontforget'      : 'törölközőt ne felejts el hozni!',
-			'shortcutsof'     : 'Shortcuts disabled',
+			'shortcutsof'     : 'Kivágások letíltva',
 			'dropFiles'       : 'Fájlok dobása ide',
 			'or'              : 'vagy',
 			'selectForUpload' : 'fájlok böngészése',
 			'moveFiles'       : 'Fájlok áthelyezése',
 			'copyFiles'       : 'Fájlok másolása',
-			'restoreFiles'    : 'Restore items', // from v2.1.24 added 5.5.2017
+			'restoreFiles'    : 'Itemek helyreállítása', // from v2.1.24 added 5.5.2017
 			'rmFromPlaces'    : 'Távolítsa el a helyekről',
 			'aspectRatio'     : 'Oldalarány',
 			'scale'           : 'Skála',
@@ -399,7 +401,7 @@
 			'emptyFolderDrop' : 'A mappa üres\\Elem eldobása', // from v2.1.6 added 30.12.2015
 			'emptyFolderLTap' : 'A mappa üres\\Hosszú koppintás elemek hozzáadásához', // from v2.1.6 added 30.12.2015
 			'quality'         : 'Minőség', // from v2.1.6 added 5.1.2016
-			'autoSync'        : 'Auto sync',  // from v2.1.6 added 10.1.2016
+			'autoSync'        : 'Automatikus szinkronizálás',  // from v2.1.6 added 10.1.2016
 			'moveUp'          : 'Mozgatás fel',  // from v2.1.6 added 18.1.2016
 			'getLink'         : 'URL-link letöltése', // from v2.1.7 added 9.2.2016
 			'selectedItems'   : 'Kiválasztott elemek ($1)', // from v2.1.7 added 2.19.2016
@@ -419,12 +421,12 @@
 			'contextmenu'     : 'Context menu', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : 'Page turning', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : 'Volume roots', // from v2.1.16 added 16.9.2016
-			'reset'           : 'Reset', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : 'Background color', // from v2.1.16 added 1.10.2016
+			'reset'           : 'Újraindítás', // from v2.1.16 added 1.10.2016
+			'bgcolor'         : 'Háttérszín', // from v2.1.16 added 1.10.2016
 			'colorPicker'     : 'Color picker', // from v2.1.16 added 1.10.2016
 			'8pxgrid'         : '8px Grid', // from v2.1.16 added 4.10.2016
-			'enabled'         : 'Enabled', // from v2.1.16 added 4.10.2016
-			'disabled'        : 'Disabled', // from v2.1.16 added 4.10.2016
+			'enabled'         : 'Engedélyezve', // from v2.1.16 added 4.10.2016
+			'disabled'        : 'Letíltva', // from v2.1.16 added 4.10.2016
 			'emptyIncSearch'  : 'Search results is empty in current view.\\APress [Enter] to expand search target.', // from v2.1.16 added 5.10.2016
 			'emptyLetSearch'  : 'First letter search results is empty in current view.', // from v2.1.23 added 24.3.2017
 			'textLabel'       : 'Text label', // from v2.1.17 added 13.10.2016
@@ -435,11 +437,11 @@
 			'firstLetterSearch': 'First letter search', // from v2.1.23 added 24.3.2017
 			'presets'         : 'Presets', // from v2.1.25 added 26.5.2017
 			'tooManyToTrash'  : 'It\'s too many items so it can\'t into trash.', // from v2.1.25 added 9.6.2017
-			'TextArea'        : 'TextArea', // from v2.1.25 added 14.6.2017
+			'TextArea'        : 'Szövegmező', // from v2.1.25 added 14.6.2017
 			'folderToEmpty'   : 'Empty the folder "$1".', // from v2.1.25 added 22.6.2017
 			'filderIsEmpty'   : 'There are no items in a folder "$1".', // from v2.1.25 added 22.6.2017
 			'preference'      : 'Preference', // from v2.1.26 added 28.6.2017
-			'language'        : 'Language', // from v2.1.26 added 28.6.2017
+			'language'        : 'Nyelv', // from v2.1.26 added 28.6.2017
 			'clearBrowserData': 'Initialize the settings saved in this browser', // from v2.1.26 added 28.6.2017
 			'toolbarPref'     : 'Toolbar settings', // from v2.1.27 added 2.8.2017
 			'charsLeft'       : '... $1 chars left.',  // from v2.1.29 added 30.8.2017
@@ -447,7 +449,7 @@
 			'sum'             : 'Sum', // from v2.1.29 added 28.9.2017
 			'roughFileSize'   : 'Rough file size', // from v2.1.30 added 2.11.2017
 			'autoFocusDialog' : 'Focus on the element of dialog with mouseover',  // from v2.1.30 added 2.11.2017
-			'select'          : 'Select', // from v2.1.30 added 23.11.2017
+			'select'          : 'Kiválaszt', // from v2.1.30 added 23.11.2017
 			'selectAction'    : 'Action when select file', // from v2.1.30 added 23.11.2017
 			'useStoredEditor' : 'Open with the editor used last time', // from v2.1.30 added 23.11.2017
 			'selectinvert'    : 'Invert selection', // from v2.1.30 added 25.11.2017
@@ -464,34 +466,34 @@
 			'selectionInfo'   : 'Selection Info', // from v2.1.33 added 7.3.2018
 			'hashChecker'     : 'Algorithms to show the file hash', // from v2.1.33 added 10.3.2018
 			'infoItems'       : 'Info Items (Selection Info Panel)', // from v2.1.38 added 28.3.2018
-			'pressAgainToExit': 'Press again to exit.', // from v2.1.38 added 1.4.2018
+			'pressAgainToExit': 'Nyomja meg mégegyszer a kilépéshez', // from v2.1.38 added 1.4.2018
 			'toolbar'         : 'Toolbar', // from v2.1.38 added 4.4.2018
 			'workspace'       : 'Work Space', // from v2.1.38 added 4.4.2018
 			'dialog'          : 'Dialog', // from v2.1.38 added 4.4.2018
-			'all'             : 'All', // from v2.1.38 added 4.4.2018
-			'iconSize'        : 'Icon Size (Icons view)', // from v2.1.39 added 7.5.2018
-			'editorMaximized' : 'Open the maximized editor window', // from v2.1.40 added 30.6.2018
+			'all'             : 'Összes', // from v2.1.38 added 4.4.2018
+			'iconSize'        : 'Ikon méret (Ikon nézet)', // from v2.1.39 added 7.5.2018
+			'editorMaximized' : 'Maximális szerkesztői nézet', // from v2.1.40 added 30.6.2018
 			'editorConvNoApi' : 'Because conversion by API is not currently available, please convert on the website.', //from v2.1.40 added 8.7.2018
 			'editorConvNeedUpload' : 'After conversion, you must be upload with the item URL or a downloaded file to save the converted file.', //from v2.1.40 added 8.7.2018
 			'convertOn'       : 'Convert on the site of $1', // from v2.1.40 added 10.7.2018
-			'integrations'    : 'Integrations', // from v2.1.40 added 11.7.2018
+			'integrations'    : 'Integrációk', // from v2.1.40 added 11.7.2018
 			'integrationWith' : 'This elFinder has the following external services integrated. Please check the terms of use, privacy policy, etc. before using it.', // from v2.1.40 added 11.7.2018
-			'showHidden'      : 'Show hidden items', // from v2.1.41 added 24.7.2018
-			'hideHidden'      : 'Hide hidden items', // from v2.1.41 added 24.7.2018
+			'showHidden'      : 'Elrejtett elemek mutatása', // from v2.1.41 added 24.7.2018
+			'hideHidden'      : 'Elrejtett elemek elrejtése', // from v2.1.41 added 24.7.2018
 			'toggleHidden'    : 'Show/Hide hidden items', // from v2.1.41 added 24.7.2018
 			'makefileTypes'   : 'File types to enable with "New file"', // from v2.1.41 added 7.8.2018
 			'typeOfTextfile'  : 'Type of the Text file', // from v2.1.41 added 7.8.2018
-			'add'             : 'Add', // from v2.1.41 added 7.8.2018
-			'theme'           : 'Theme', // from v2.1.43 added 19.10.2018
-			'default'         : 'Default', // from v2.1.43 added 19.10.2018
-			'description'     : 'Description', // from v2.1.43 added 19.10.2018
-			'website'         : 'Website', // from v2.1.43 added 19.10.2018
-			'author'          : 'Author', // from v2.1.43 added 19.10.2018
-			'email'           : 'Email', // from v2.1.43 added 19.10.2018
-			'license'         : 'License', // from v2.1.43 added 19.10.2018
+			'add'             : 'Hozzáad', // from v2.1.41 added 7.8.2018
+			'theme'           : 'Kinézet', // from v2.1.43 added 19.10.2018
+			'default'         : 'Eredeti', // from v2.1.43 added 19.10.2018
+			'description'     : 'Leírás', // from v2.1.43 added 19.10.2018
+			'website'         : 'Weboldal', // from v2.1.43 added 19.10.2018
+			'author'          : 'Szerző', // from v2.1.43 added 19.10.2018
+			'email'           : 'Email cím', // from v2.1.43 added 19.10.2018
+			'license'         : 'Licensz', // from v2.1.43 added 19.10.2018
 			'exportToSave'    : 'This item can\'t be saved. To avoid losing the edits you need to export to your PC.', // from v2.1.44 added 1.12.2018
-			'dblclickToSelect': 'Double click on the file to select it.', // from v2.1.47 added 22.1.2019
-			'useFullscreen'   : 'Use fullscreen mode', // from v2.1.47 added 19.2.2019
+			'dblclickToSelect': 'Duplakattintás a fájlra,hogy kiválaszd', // from v2.1.47 added 22.1.2019
+			'useFullscreen'   : 'Használj teljesképernyőt', // from v2.1.47 added 19.2.2019
 
 			/********************************** mimetypes **********************************/
 			'kindUnknown'     : 'Ismeretlen',
@@ -509,7 +511,7 @@
 			'kindMsPP'        : 'Microsoft Powerpoint bemutató',
 			'kindOO'          : 'Open Office dokumentum',
 			'kindAppFlash'    : 'Flash alkalmazás',
-			'kindPDF'         : 'Portable Document Format (PDF)',
+			'kindPDF'         : 'Hordozható Dokumentációs Formátum (PDF)',
 			'kindTorrent'     : 'Bittorrent fájl',
 			'kind7z'          : '7z archívum',
 			'kindTAR'         : 'TAR archívum',
@@ -563,7 +565,7 @@
 			'kindAudioMIDI'   : 'MIDI hangfájl',
 			'kindAudioOGG'    : 'Ogg Vorbis hangfájl',
 			'kindAudioWAV'    : 'WAV hangfájl',
-			'AudioPlaylist'   : 'MP3 playlist',
+			'AudioPlaylist'   : 'MP3 lejátszásilista',
 			'kindVideo'       : 'Film',
 			'kindVideoDV'     : 'DV film',
 			'kindVideoMPEG'   : 'MPEG film',
